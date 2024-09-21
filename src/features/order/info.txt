@@ -1,0 +1,6 @@
+Place Order
+
+1.get the total cart items of an user
+2.create a record for Order
+4.reduce stock(product quantity)
+3. clear the cart

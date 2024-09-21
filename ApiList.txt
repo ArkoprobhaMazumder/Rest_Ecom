@@ -1,0 +1,15 @@
+Product Controller
+1. get products - Done;
+2. add a product - Done;
+3. get one product - Done;
+4. rate a product - Done;
+5. filter products - Done;
+
+User Controller 
+1. Signup - Done;
+2. Login -Done;
+
+Cart Controller
+1. addCart - Done;
+2. getCartData - Done;
+3. deleteCart - Done;

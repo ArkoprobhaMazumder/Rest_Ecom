@@ -1,0 +1,81 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "E-commerce",
+        "description": "My ecommerce api",
+        "version": "1.0.0"
+    },
+    "host": "localhost:3200",
+    "paths": {
+        "/api/user/login": {
+            "get": {
+                "summary": "Login",
+                "description": "User login to get a token",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User Credentials",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Login Successfull"
+                    },
+                    "404": {
+                        "description": "Incorrect Credentials"
+                    }
+                }
+            }
+        },
+        "/api/users/signup": {
+            "post": {
+                "summary": "Sign Up",
+                "description": "New User Entry",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User Credentials",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Sign up Successfull !!!!"
+                    },
+                    "400": {
+                        "description": "Already User, Login!!!"
+                    }
+                }
+            }
+        }
+    }
+}
